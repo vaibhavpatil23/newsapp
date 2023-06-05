@@ -4,13 +4,14 @@ import NavBar from "./componant/NavBar";
 import News from "./componant/News";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
-
+// import Switch from "@material-ui/core/Switch";
 const App = () => {
   const pageSize = 5;
   const apiKey = process.env.REACT_APP_NEWS_API;
   const [Progress, setProgress] = useState(0);
   return (
     <>
+      {/* <Switch> */}
       <div>
         <Router>
           <NavBar />
@@ -103,12 +104,11 @@ const App = () => {
               category="technology"
             />
           </Route>
-          {/* </Switch> */}
         </Router>
       </div>
+      {/* </Switch> */}
     </>
   );
 };
 
 export default App;
-// a920dff5073d4cf1b8cd81abeae10676
